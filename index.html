@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <link rel="stylesheet" href="landing_page.css">
+   <div class="content" id="content">
+        <div class="blue">
+        </div>
+        <div class="white">
+            <section1>
+                <div class="navbar">
+                    <div class="left">APPWEB <br> TECHNOLOGIES</div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="../work_page/work_page.html">About us</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="../select_plan/select_plan.html">Pricing</a></li>
+                            <li><a href="#">Sign In</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section1>
+            <section2>
+                <div class="quote">
+                    <p>Your online wardrobe</p>
+                    <h1 id="text">Programmer</h1>
+                    <br>
+                    <br>
+                    <button onclick="changeColor()">Get More</button>
+                </div>
+                <div class="img">
+                    <img src="../images/programming-isometric-man-vector-28837307.jpg" alt="programmer">
+                </div>
+            </section2>
+            
+        </div>
+   
+   </div>
+   <h1 style="color: rgb(38, 85, 240);transform: translate(0px, 104px);text-align: center">Services</h1>
+   <div class="service">
+    <div class="card1">
+        <p>Service 1</p>
+        <h1 style="color: rgb(38, 85, 240);">Web Development</h1>
+        <p>Web development is the process of creating websites and web applications that run on the internet. It involves designing, coding, and maintaining websites using technologies like HTML, CSS, JavaScript, and backend languages such as PHP, Python, or Node.js. Web development includes everything from building simple static pages to complex dynamic web platforms like e-commerce sites, blogs, and business portals.</p>
+    </div>
+    <div class="card2">
+        <p>Service 2</p>
+        <h1 style="color: rgb(38, 85, 240);">App Development</h1>
+        <p>App development refers to the creation of software applications that are designed to run on mobile devices (Android, iOS) or desktops. This process includes planning, designing, coding, testing, and launching apps that provide specific functions or services to users, like social media apps, games, productivity tools, or online shopping apps. Common technologies include Java, Kotlin, Swift, Flutter, and React Native.</p>
+    </div>
+    <div class="card3">
+        <p>Service 3</p>
+        <h1 style="color: rgb(38, 85, 240);">Advertising in website</h1>
+        <p>Advertising in websites is the practice of displaying promotional content, such as banners, pop-ups, videos, or sponsored posts, on a website to generate income or promote products and services. This can be done through ad networks like Google AdSense, direct partnerships with brands, or affiliate marketing. Ads can be targeted to specific audiences to maximize visibility and effectiveness while helping website owners monetize their traffic.</p>
+    </div>
+
+</div>
+</body>
+
+<script>
+
+    function changeColor()
+    {
+       const content= document.getElementById('content');
+        if(content.style.backgroundColor === 'white')
+        {
+            content.style.backgroundColor='yellow';
+        }
+        else
+        {
+            content.style.backgroundColor='white';
+        }
+    }
+
+    // const words=["Programmer","Web Develeoper","App Developer"];
+    // let index=0;
+
+    // setInterval(()=>{
+    //     index=(index+1)%words.length;
+    //     document.getElementById("text").textContent=words[index];
+    // },2000);
+</script>
+</html>

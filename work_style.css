@@ -1,0 +1,298 @@
+/* CSS Styling of body */
+body{
+    padding: 0;
+    margin: 0;      
+}
+/* End of CSS Styling of body */
+html{
+    scroll-behavior: smooth;
+}
+
+/****************************************************************************************************/
+
+
+/* CSS Styling for navbar */
+.navbar
+{
+    padding:50px;
+    background-color:rgb(38, 85, 240);
+    width: 263px;
+}
+.container
+{
+    display: inline-flex;
+}
+.top
+{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.bottom ul 
+{
+    list-style: none;
+}
+.bottom ul li
+{
+    margin-bottom: 23px;
+}
+.bottom ul li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 23px;
+}
+
+/* End of CSS Styling of Navbar */
+
+
+/********************************************************************************************************/
+
+
+/* CSS Styling of hero image */
+.img0
+{
+    width: 1132px;
+    height: 500px;   
+}
+/* End of CSS Styling of hero image */
+
+
+/********************************************************************************************************/
+
+
+/* CSS Styling for Section 0 */
+.section0
+{
+    padding:23px;
+}
+/* End of CSS Styling of Section 0 */
+
+
+/********************************************************************************************************/
+
+
+/* CSS Styling for Section 1 */
+.section1
+{
+    display: flex;
+    padding: 23px;
+    gap: 20px;
+}
+    .img1
+    {
+        height: 500px;
+        width: 500px;
+        border: 1px solid;
+    }
+    .button button:hover{
+        background-color: rgb(66, 108, 246);; ;
+    }
+    .button button
+    {
+        background: rgb(38, 85, 240);
+        border: none;
+        width: 169px;
+        color: white;
+        height: 42px;
+        cursor: pointer;
+    }
+/* End of CSS Styling for Section 1 */
+
+
+/********************************************************************************************************/
+
+
+/* CSS Styling for Section 2 */
+.section2
+{
+    padding:23px;
+}
+
+    /* CSS Styling for Gallery 1 */
+    .gallery1
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .food1
+    {
+        height: 200px;
+        width: 200px;
+    }
+
+    /* CSS Styling for Gallery 2 */
+    .gallery2
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .plant2
+    {
+        height: 200px;
+        width: 350px;
+    }
+
+    /* CSS Styling for Gallery 3 */
+    .gallery3
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .plant1
+    {
+        height: 200px;
+        width: 270px;
+    }
+
+/* End of CSS Styling for Section2 */
+
+
+/********************************************************************************************************/
+
+
+/* CSS Styling for Section 3 */
+.section3
+{
+    padding: 23px;
+}
+
+
+#name{
+    width: 470px;
+    height: 30px;
+}
+#email{
+    width: 470px;
+    height: 30px;
+}
+
+#message
+{
+    width: 470px;
+    height: 250px;
+}
+
+#send
+{
+    background: rgb(38, 85, 240);
+    border: none;
+    width: 100px;
+    color: white;
+    height: 42px;
+    cursor: pointer;
+}
+
+#send:hover{
+    background-color:  rgb(66, 108, 246);;;
+}
+
+/* End of CSS Styling for Section 3 */
+
+
+/********************************************************************************************************/
+
+
+/* CSS Styling for Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: white;
+    color: rgb(38, 85, 240);
+    font-size: 1em;
+    border-radius: 0 0 60px 60px;
+}
+
+.footer div {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.footer p, .footer ul {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 8px 0;
+}
+
+.footer ul li a {
+    color: rgb(38, 85, 240);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #ffeb3b;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-icons a {
+    color: rgb(38, 85, 240);
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.footer-icons a:hover {
+    color: #ffeb3b;
+}
+
+.footer-right p i {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer div {
+        margin-bottom: 20px;
+    }
+}
+
+/* End of CSS Styling for footer */
+
+
+/********************************************************************************************************/
+
+
+@media(max-width:1300px)
+{
+    .container{
+        display:block
+    }
+    .navbar
+    {
+        width: 1205px;
+        text-align: center;
+    }
+    .img0{
+        width: 1267px;
+    }
+    .section0
+    {
+        width:1205px;
+    }
+}

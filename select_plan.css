@@ -1,0 +1,301 @@
+ /* CSS styling for body */
+ body
+ {
+   padding: 0;
+   margin: 0;
+   background: linear-gradient(
+       to right, 
+       rgb(38, 85, 240) 0%,
+       rgb(38, 85, 240) 15%, 
+       white 15%,
+       white 100%);
+ }
+ /* End of CSS styling for body */
+
+
+/***************************************************************************/
+
+ 
+/* CSS styling for the box section on body */
+.content{
+   height: 560px;
+   border: 2px solid;
+   width: 90%;
+   transform: translate(50px, 58px);
+   padding: 23px;
+   background-color: white;
+   display: flex;
+   box-shadow: 1px 1px 16px 8px rgba(0, 0, 0, 0.1);
+   border: none;
+   flex-wrap: wrap;
+}
+.blue{
+   background: rgb(38, 85, 240);
+   height: 109%;
+   width: 6%;
+   margin-top: -23px;
+   margin-left: -22px;
+   margin-bottom: 23px;
+   border-bottom-right-radius: 40px;
+   border-top-right-radius: 40px;
+   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.white
+{
+   flex:1;
+}
+/* End of CSS styling for the box section on body */
+
+
+/***************************************************************************/
+
+
+/* CSS Styling for Navbar */
+.navbar
+{
+   padding: 23px;
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+}
+.navbar ul 
+{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   gap: 20px; 
+}
+.navbar ul li a 
+{
+   text-decoration: none;
+   color: rgb(38, 85, 240);
+   font-weight: bold;
+   padding: 8px 12px;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+.navbar ul li a:hover 
+{
+   background-color: rgba(38, 85, 240, 0.1);
+   
+}
+.navbar ul li a:active 
+{
+   background-color: rgba(38, 85, 240, 0.1);
+}
+.left 
+{
+   font-size: 24px;
+   font-weight: bold;
+   color: rgb(38, 85, 240);
+}
+/* End of CSS Styling for Navbar */
+
+
+/***************************************************************************/
+
+
+/* CSS Styling for Plans */
+.plans
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 40px;
+}
+.basic_plan
+{
+   height: 389px;
+   width: 270px;
+   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+   background-color: white;
+   border-bottom-left-radius: 100px;
+   border-top-right-radius: 100px;
+   padding: 23px;
+   transition: transform 0.3s, box-shadow 0.3s;
+   animation: fadeInUp 1s  ease-in-out;
+}
+.standard_plan
+{
+   height: 389px;
+   width: 270px;
+   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+   background-color: white;
+   border-bottom-left-radius: 100px;
+   border-top-right-radius: 100px;
+   padding: 23px;
+   transition: transform 0.3s, box-shadow 0.3s;
+   animation: fadeInUp 1s  ease-in-out;
+}
+.premium_plan
+{
+   height: 389px;
+   width: 270px;
+   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+   background-color: white;
+   border-bottom-left-radius: 100px;
+   border-top-right-radius: 100px;
+   padding: 23px;
+   transition: transform 0.3s, box-shadow 0.3s;
+   animation: fadeInUp 1s  ease-in-out;
+}
+
+.Rs1
+{
+   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+   padding: 4px;
+   width: 226px;
+   border-top-right-radius: 80px;
+   border-bottom-left-radius: 80px;
+   text-align: center;
+   background: #1b1bae;
+   color: white;
+   transform: translate(-85px, -6px);
+}
+.Rs2
+{
+   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+   padding: 4px;
+   width: 226px;
+   border-top-right-radius: 80px;
+   border-bottom-left-radius: 80px;
+   text-align: center;
+   background: #25c625;
+   color: white;
+   transform: translate(-85px, -6px);
+}
+.Rs3
+{
+   box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+   padding: 4px;
+   width: 226px;
+   border-top-right-radius: 80px;
+   border-bottom-left-radius: 80px;
+   text-align: center;
+   background: deeppink;
+   color: white;
+   transform: translate(-85px, -6px);
+}
+.basic_button button
+{
+   background: white;
+   border: none;
+   cursor: pointer;
+   font-size: larger;
+   color: #1b1bae;
+   font-weight: 700;
+   transform: translate(154px, 2px);
+}
+.standard_button button
+{
+   background: white;
+   border: none;
+   cursor: pointer;
+   font-size: larger;
+   color: #25c625;;
+   font-weight: 700;
+   transform: translate(154px, 2px);
+}
+.premium_button button
+{
+   background: white;
+   border: none;
+   cursor: pointer;
+   font-size: larger;
+   color: deeppink;
+   font-weight: 700;
+   transform: translate(154px, -16px);
+}
+/* End of CSS Styling for Plans */
+
+
+/***************************************************************************/
+
+
+/* CSS Styling for Animation Effect on Plans */
+@keyframes fadeIn 
+{
+   from { opacity: 0; transform: translateY(-20px); }
+   to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounceIn 
+{
+   from { transform: scale(0.9); opacity: 0; }
+   to { transform: scale(1); opacity: 1; }
+}   
+
+.basic_plan:hover 
+{
+   transform: translateY(-10px);
+   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+.standard_plan:hover 
+{
+   transform: translateY(-10px);
+   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+.premium_plan:hover 
+{
+   transform: translateY(-10px);
+   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+/* End of CSS Styling for Animation Effect on Plans */
+
+
+/***************************************************************************/
+
+
+/* CSS media Query for making the responsive */
+@media(max-width:1189px)
+{
+   .content{
+       height: 1100px;
+      
+   }
+   .blue{
+       height: 1146px;
+       width: 45px;
+   }
+}
+
+@media(max-width:770px)
+{
+   .content
+   {
+       height: 1560px;
+   }
+   .blue{
+       height: 1606px;
+       width: 50px;
+   }
+}
+
+@media(max-width:793px)
+{
+   .navbar{
+       display:block;
+   }
+
+   .left{
+       margin-bottom: 23px;
+   }
+   .right
+   {
+       margin-bottom: 23px;
+   }
+  
+}
+@media(max-width:500px)
+{
+   .blue {
+       display: none;
+   }
+   .content{
+       margin-left: -14px;
+   }
+}
+/* End of CSS media Query for making the responsive */
+
+
+/***************************************************************************/
