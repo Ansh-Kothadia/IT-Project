@@ -185,7 +185,7 @@
    font-size: larger;
    color: #1b1bae;
    font-weight: 700;
-   transform: translate(154px, 2px);
+   transform: translate(144px, -4px)
 }
 .standard_button button
 {
@@ -195,7 +195,7 @@
    font-size: larger;
    color: #25c625;;
    font-weight: 700;
-   transform: translate(154px, 2px);
+   transform: translate(144px, -4px)
 }
 .premium_button button
 {
@@ -205,7 +205,7 @@
    font-size: larger;
    color: deeppink;
    font-weight: 700;
-   transform: translate(154px, -16px);
+   transform: translate(144px, -4px)
 }
 /* End of CSS Styling for Plans */
 
