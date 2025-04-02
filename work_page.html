@@ -4,160 +4,341 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 50px;
+            background-color: rgb(38, 85, 240);
+            width: 263px;
+        }
+
+        .container {
+            display: inline-flex;
+        }
+
+        .top {
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .bottom ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bottom ul li {
+            margin-bottom: 23px;
+        }
+
+        .bottom ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 23px;
+        }
+
+        /* Hero Image */
+        .img0 {
+            width: 1132px;
+            height: 500px;
+        }
+
+        /* Sections */
+        .section0, .section1, .section2, .section3 {
+            padding: 23px;
+        }
+
+        .section1 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .img1 {
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+        }
+
+        .button button {
+            background: rgb(38, 85, 240);
+            border: none;
+            width: 169px;
+            color: white;
+            height: 42px;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: rgb(66, 108, 246);
+        }
+
+        /* Image Galleries */
+        .gallery1, .gallery2, .gallery3 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .gallery1 img, .gallery2 img, .gallery3 img {
+            height: 200px;
+            width: auto;
+            max-width: 100%;
+        }
+
+        /* Form */
+        .form input, .form textarea {
+            width: 100%;
+            max-width: 470px;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+
+        #send {
+            background: rgb(38, 85, 240);
+            border: none;
+            width: 100px;
+            color: white;
+            height: 42px;
+            cursor: pointer;
+        }
+
+        #send:hover {
+            background-color: rgb(66, 108, 246);
+        }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 50px;
+            background-color: white;
+            color: rgb(38, 85, 240);
+            font-size: 1em;
+            border-radius: 0 0 60px 60px;
+        }
+
+        .footer div {
+            flex: 1;
+            padding: 20px;
+            min-width: 250px;
+        }
+
+        .footer h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .footer-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-icons a {
+            color: rgb(38, 85, 240);
+            font-size: 1.5em;
+            transition: 0.3s;
+        }
+
+        .footer-icons a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .container {
+                display: block;
+            }
+
+            .navbar {
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .bottom ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 0;
+            }
+
+            .bottom ul li {
+                margin: 10px;
+            }
+
+            .img0 {
+                width: 100%;
+                height: auto;
+            }
+
+            .section1 {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .img1 {
+                width: 100%;
+                height: auto;
+            }
+
+            .footer {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar .bottom ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gallery1 img, .gallery2 img, .gallery3 img {
+                width: 100%;
+                height: auto;
+            }
+
+            .form input, .form textarea {
+                width: 100%;
+            }
+
+            .footer {
+                padding: 20px;
+            }
+
+            .footer-icons {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <link rel="stylesheet" href="work_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <div class="container">
-    <div class="navbar">
-        <div class="top">
-            <h1>WEBAPP <br> TECHNOLOGIES</h1>
-        </div>
-        <div class="bottom">
-            <ul>
-                <li><a href="#Welcome">Welcome</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#About Us">About Us</a></li>
-                <li><a href="#Work One">Work One</a></li>
-                <li><a href="#Work Two">Work Two</a></li>
-                <li><a href="#Work Three">Work Three</a></li>
-                <li><a href="#Contact Us">Contact Us</a></li>
-                
-            </ul>
-        </div>
-    </div>
-
-    <div class="content">
-        
-        <img src="./images/online-documentation-database-and-process-document-electronic-automation-platform-it-staff-working-with-document-management-system-dms-corporate-business-technology-cognition-on-modern-manag.jpg" alt="IT company" class="img0">
-        <div class="section0">    
-            <h1 style="color: rgb(38, 85, 240); " id="Welcome">Welcome To WebApp Technologies</h1>
-            <p>An IT company provides technology solutions and services to help businesses operate more efficiently in the digital world. These services can include website and app development, software design, IT consulting, cloud solutions, cybersecurity, and digital marketing.<br><br><br> IT companies work with clients from various industries to create custom tech solutions that improve workflows, increase online visibility, and support business growth through innovative and reliable technology.</p>
-        </div>
-        <div class="section1">
-            <div class="img1">
-                <img src="./images/Screenshot 2025-03-06 122112.png" alt="img1" class="img1">
+        <div class="navbar">
+            <div class="top">
+                <h1>WEBAPP <br> TECHNOLOGIES</h1>
             </div>
-            <div class="text">
-                <h2 style="color: rgb(38, 85, 240);" id="About Us">About Us</h2>
-                <p>An IT company provides technology solutions and services to help businesses operate more efficiently in the digital world. <br><br><br>These services can include website and app development, software design, IT consulting, cloud solutions, cybersecurity, and digital marketing.<br><br><br> IT companies work with clients from various industries to create custom tech solutions that improve workflows, increase online visibility, and support business growth through innovative and reliable technology.</p>
-                <div class="button">
-                    <button>Read More</button>
+            <div class="bottom">
+                <ul>
+                    <li><a href="#Welcome">Welcome</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#About Us">About Us</a></li>
+                    <li><a href="#Work One">Work One</a></li>
+                    <li><a href="#Work Two">Work Two</a></li>
+                    <li><a href="#Work Three">Work Three</a></li>
+                    <li><a href="#Contact Us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="./images/online-documentation-database-and-process-document-electronic-automation-platform-it-staff-working-with-document-management-system-dms-corporate-business-technology-cognition-on-modern-manag.jpg" alt="IT company" class="img0">
+            <div class="section0">    
+                <h1 style="color: rgb(38, 85, 240); " id="Welcome">Welcome To WebApp Technologies</h1>
+                <p>An IT company provides technology solutions and services to help businesses operate more efficiently in the digital world. These services can include website and app development, software design, IT consulting, cloud solutions, cybersecurity, and digital marketing.<br><br><br> IT companies work with clients from various industries to create custom tech solutions that improve workflows, increase online visibility, and support business growth through innovative and reliable technology.</p>
+            </div>
+
+            <div class="section1">
+                <img src="./images/Screenshot 2025-03-06 122112.png" alt="img1" class="img1">
+                <div class="text">
+                    <h2 style="color: rgb(38, 85, 240);" id="About Us">About Us</h2>
+                    <p>An IT company provides technology solutions and services to help businesses operate more efficiently in the digital world. <br><br><br>These services can include website and app development, software design, IT consulting, cloud solutions, cybersecurity, and digital marketing.<br><br><br> IT companies work with clients from various industries to create custom tech solutions that improve workflows, increase online visibility, and support business growth through innovative and reliable technology.</p>
+                    <div class="button">
+                        <button>Read More</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="section2">
-            <h2 style="color: rgb(38, 85, 240);" id="Work One">Food Website</h2>
-            <div class="gallery1">
-                <img src="./images/Screenshot 2025-03-06 191614.png" alt="food1" class="food1">
-                <img src="./images/Screenshot 2025-03-06 191706.png" alt="food1" class="food1">
-                <img src="./images/Screenshot 2025-03-06 191758.png" alt="food1" class="food1">
-                <img src="./images/Screenshot 2025-03-06 191842.png" alt="food1" class="food1">
-                <img src="./images/Screenshot 2025-03-06 191928.png" alt="food1" class="food1">
+            <div class="section2">
+                <h2 style="color: rgb(38, 85, 240);" id="Work One">Food Website</h2>
+                <div class="gallery1">
+                    <img src="../images/Screenshot 2025-03-06 191614.png" alt="food1" class="food1">
+                    <img src="../images/Screenshot 2025-03-06 191706.png" alt="food1" class="food1">
+                    <img src="../images/Screenshot 2025-03-06 191758.png" alt="food1" class="food1">
+                    <img src="../images/Screenshot 2025-03-06 191842.png" alt="food1" class="food1">
+                    <img src="../images/Screenshot 2025-03-06 191928.png" alt="food1" class="food1">
+                </div>
+                <br>
+                <br>
+                <h2 style="color: rgb(38, 85, 240);" id="Work Two">Plant Care Website Prototype</h2>
+                <div class="gallery2">
+                    <img src="../images/Screenshot 2025-03-06 195231.png" alt="plant1" class="plant2">
+                    <img src="../images/Screenshot 2025-03-06 195316.png" alt="plant1" class="plant2">
+                    <img src="../images/Screenshot 2025-03-06 195410.png" alt="plant1" class="plant2">
+                </div>
+                <br>
+                <br>
+                <h2 style="color: rgb(38, 85, 240);" id="Work Three">Plant Care Website </h2>
+                <div class="gallery1">
+                    <img src="../images/Screenshot 2025-03-06 194147.png" alt="plant1" class="plant1">
+                    <img src="../images/Screenshot 2025-03-06 194403.png" alt="plant1" class="plant1">
+                    <img src="../images/Screenshot 2025-03-06 194448.png" alt="plant1" class="plant1">
+                    <img src="../images/Screenshot 2025-03-06 194545.png" alt="plant1" class="plant1">
+                </div>   
             </div>
-            <br>
-            <br>
-            <h2 style="color: rgb(38, 85, 240);" id="Work Two">Plant Care Website Prototype</h2>
-            <div class="gallery2">
-                <img src="./images/Screenshot 2025-03-06 195231.png" alt="plant1" class="plant2">
-                <img src="./images/Screenshot 2025-03-06 195316.png" alt="plant1" class="plant2">
-                <img src="./images/Screenshot 2025-03-06 195410.png" alt="plant1" class="plant2">
+    
+
+            <div class="section3">
+                <h2 style="color:rgb(38, 85, 240);" id="Contact Us">Contact Us</h2>
+               
+                    <form action="work_page.html" method="post">
+                        <div class="form">
+                        <input type="text" name="name" id="name" placeholder=" Name">
+                        <br><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <br><br>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <br>
+                        <input type="submit" value="Send" id="send">
+                        </div>
+                    </form>
             </div>
-            <br>
-            <br>
-            <h2 style="color: rgb(38, 85, 240);" id="Work Three">Plant Care Website </h2>
-            <div class="gallery1">
-                <img src="./images/Screenshot 2025-03-06 194147.png" alt="plant1" class="plant1">
-                <img src="./images/Screenshot 2025-03-06 194403.png" alt="plant1" class="plant1">
-                <img src="./images/Screenshot 2025-03-06 194448.png" alt="plant1" class="plant1">
-                <img src="./images/Screenshot 2025-03-06 194545.png" alt="plant1" class="plant1">
-            </div>   
-        </div>
-
-        <div class="section3">
-            <h2 style="color:rgb(38, 85, 240);" id="Contact Us">Contact Us</h2>
-           
-                <form action="work_page.html" method="post">
-                    <div class="form">
-                    <input type="text" name="name" id="name" placeholder=" Name">
-                    <br><br>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                    <br><br>
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
-                    <br>
-                    <input type="submit" value="Send" id="send">
-                    </div>
-                </form>
-        </div>
-
-
-
-
-
-         <!-- Footer -->
-         <footer class="footer">
-            <footer class="footer">
-      <div class="footer-left">
-          <h3>WebApp Technology</h3>
-          <p>An IT company provides technology solutions and services to help businesses operate more efficiently in the digital world. These services can include website and app development, software design, IT consulting, cloud solutions, cybersecurity, and digital marketing.</p>
-          <div class="footer-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-      </div>
-  
-      <div class="footer-center">
-          <h3>Quick Links</h3>
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-  
-      <div class="footer-right">
-          <h3>Contact Us</h3>
-          <p><i class="fas fa-map-marker-alt"></i> 123 Green St, Plant City, Earth</p>
-          <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
-          <p><i class="fas fa-envelope"></i> support@WebApp.com</p>
-      </div>
-  </footer>
-  <footer class="footer">
-    <div class="footer-left">
-        <h3>WebApp Technology</h3>
-        <p>An IT company provides technology solutions and services to help businesses operate more efficiently in the digital world. These services can include website and app development, software design, IT consulting, cloud solutions, cybersecurity, and digital marketing.</p>
-        <div class="footer-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            
         </div>
     </div>
-  
-    <div class="footer-center">
-        <h3>Quick Links</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-  
-    <div class="footer-right">
-        <h3>Contact Us</h3>
-        <p><i class="fas fa-map-marker-alt"></i> 123 Green St, Plant City, Earth</p>
-        <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
-        <p><i class="fas fa-envelope"></i> support@WebApp.com</p>
-    </div>
-  </footer>
-  
-          </footer>
-    </div>
-</div>
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>WebApp Technology</h3>
+            <p>An IT company provides technology solutions and services to help businesses operate more efficiently in the digital world. These services can include website and app development, software design, IT consulting, cloud solutions, cybersecurity, and digital marketing.</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-center">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-right">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Green St, Plant City, Earth</p>
+            <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+            <p><i class="fas fa-envelope"></i> support@WebApp.com</p>
+        </div>
+    </footer>
+   
 </body>
 </html>
